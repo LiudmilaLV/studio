@@ -38,6 +38,11 @@ body {
     height: 60px;
 }
 
+.nav > li {
+    display: inline;
+    list-style: none;
+    }
+
 .item-fixed {
     background-color: #2b2b2b;
     position: fixed;
@@ -142,7 +147,7 @@ a {
     gap: 1rem;
 }
 
-.socials > div > img {
+.socials > div > a > img {
     max-height: 40px;
 }
 
@@ -160,7 +165,7 @@ a {
         justify-content: center;
         gap: 6rem;
     }
-
+    
     h1 {
         font-size: 3rem;
     }
