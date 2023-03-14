@@ -23,11 +23,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+.header {
+    margin-right: auto;
+}
+
+h1, h2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.ital {
+    font-style: italic;
+}
+
+p {
+    font-family: 'Lora', serif;
 }
 
 .logo {
@@ -61,7 +88,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 4%;
+    border-radius: 5px;
 }
 
 .horizontal {
@@ -82,9 +109,8 @@ a {
     color: #fefefe;
 }
 
-@media only screen and (min-width: 301px) {
+@media only screen and (min-width: 350px) {
     .header,
-    .artist,
     .faq,
     .contacts {
         width: 50%;
@@ -100,13 +126,6 @@ a {
     width: 960px;
     margin: 0 auto;
     }
-    .header,
-    .artist,
-    .faq,
-    .contacts {
-        width: 33.3%;
-    }
-    .header {
-        height: 400px;
-    }
+    
+    
 }

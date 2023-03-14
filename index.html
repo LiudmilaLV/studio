@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Lora:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,27 +16,27 @@
         <div class="section nav">
             <div><a href="#gal">ГАЛЕРЕЯ</a></div>
             <div>О НАС</div>
-            <div>FAQ</div>
-            <div>КОНТАКТЫ</div>
+            <div><a href="#faq">FAQ</a></div>
+            <div><a href="#contacts">КОНТАКТЫ</a></div>
         </div>
         <div class="section header">
             <div class="logo flex-img-div flex-img-div"><img class="flex-img"class="flex-img" src="img/logo0.jpeg" alt="Datura Logo"></div>
-            <div>DATURA</div>
+            <h1>DATURA</h1>
         </div>
-            <div class="section artist">
-                <h1>Мастер татуировки Евгения</h1>
-                <div class="photo">
-                    <div class="flex-img-div"><img class="flex-img" src="img/datura-pic.jpeg" alt="Jane's photo"></div>
-                    <div class="flex-img-div"><img class="flex-img" src="img/logo0.jpeg" alt="Jane's photo"></div>
-                </div>
-                <p>Мастер графики и тонких линий.</p>
+        <div class="section artist">
+            <div class="photo">
+                <div class="flex-img-div"><img class="flex-img" src="img/datura-pic.jpeg" alt="Jane's photo"></div>
+                <div class="flex-img-div"><img class="flex-img" src="img/logo0.jpeg" alt="Jane's photo"></div>
+            </div>
+            <div class="artist-info">
+                <h2>Евгения</h2>
+                <p class="ital">Мастер графики и тонких линий.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-
-        
+        </div>        
         <div id="gallery">
             <div class="vertical flex-img-div"><img class="flex-img"src="img/vertical_milena1.jpeg" alt=""></div>
             <div class="big flex-img-div"><img class="flex-img"src="img/normal_polina1.jpeg" alt=""></div>
@@ -60,8 +64,12 @@
             <div class="big flex-img-div"><img class="flex-img"src="img/big_polina1.jpeg" alt=""></div>
             <div class="vertical flex-img-div"><img class="flex-img"src="img/vertical_milena4.jpeg" alt=""></div>
         </div>
-        <div class="section faq"></div>
-        <div class="section contacts"></div>
+        <div class="section" id="faq">
+            <h2>FAQ</h2>
+        </div>
+        <div class="section" id="contacts">
+            <h2>Контакты</h2>
+        </div>
     </div>
 </body>
 </html>
