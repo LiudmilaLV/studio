@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #fefefe;
-    gap: 1.4rem;
+    gap: 2rem;
 }
 
 .section {
@@ -61,6 +61,12 @@ h2 {
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-size: 2.4rem;
+}
+
+h3 {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 .ital {
@@ -142,6 +148,49 @@ a {
     color: #fefefe;
 }
 
+#faq {
+    flex-direction: column;
+}
+
+.content-box {
+    position: relative;
+}
+
+.question {
+    width: 94%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion > .content-box > .question::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+}
+
+.accordion > .content-box.active-toggle > .question::before {
+    content: "-";
+}
+
+.accordion > .content-box > .question-content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.content-box.active-toggle > .question-content {
+    height: fit-content;
+    padding-left: 40px;
+}
+
 .socials {
     display: flex;
     gap: 1rem;
@@ -194,6 +243,6 @@ a {
     }
 
     .section {
-        width: 100%;
+        width: 80%;
     }
 }

@@ -133,6 +133,50 @@
         </div>
         <div class="section" id="faq">
             <h2>FAQ</h2>
+            <div class="accordion">
+                <div class="content-box">
+                    <div class="question"><h3>Как подготовиться к сеансу татуировки?</h3>
+                    </div>
+                    <div class="question-content">
+                        <p>Перед сеансом рекомендуется выспаться, ограничить себя в употреблении алкоголя. 
+                            Если вы чувствительны к энергетическим напиткам, их лучше исключить за сутки. 
+                            Исключить также стоит сильнодействующие обезболивающие препараты и аспирин.</p>
+                        <p>Если работа планируется большая, нужно хорошо покушать и взять еду с собой. По желанию мы можем заказать доставку. 
+                            Также у нас в студии всегда есть чай, конфеты и печенье для перекусов в перерывах.</p>
+                        <p>Кожу лучше начать готовить за неделю: хорошо увлажнять, мягко убрать сухие частички скрабом или щёткой.
+                            Чем более напитанной будет кожа, тем лучше ляжет пигмент.</p>
+                        <p>По возможности можно взять сменную одежду темного цвета, чтобы не испачкать краской. 
+                            После сеанса также рекомендуется надеть что-то свободное и мягкое, что не будет сдавливать и травмировать тату.</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="question">
+                        <h3>Больно ли делать татуировку?</h3>
+                    </div>
+                    <div class="question-content">
+                        <p> Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique dignissimos rerum modi numquam explicabo inventore?
+                        Perferendis non itaque nostrum repellat, odio eius magnam reiciendis esse? Autem obcaecati laboriosam ratione.</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="question">
+                        <h3>Сколько заживает татуировка?</h3>
+                    </div>
+                    <div class="question-content">
+                        <p>Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique dignissimos rerum modi numquam explicabo inventore?
+                        Perferendis non itaque nostrum repellat, odio eius magnam reiciendis esse? Autem obcaecati laboriosam ratione.</p>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="question">
+                        <h3>Question Four</h3>
+                    </div>
+                    <div class="question-content">
+                        <p>Four Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique dignissimos rerum modi numquam explicabo inventore?
+                        Perferendis non itaque nostrum repellat, odio eius magnam reiciendis esse? Autem obcaecati laboriosam ratione.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section" id="contacts">
             <h2>Контакты</h2>
@@ -145,5 +189,14 @@
             </div>
         </div>
     </div>
+    <script>
+        const accordion = document.querySelectorAll(".content-box");
+
+        accordion.forEach(el => {
+            el.addEventListener("click", function() {
+                this.classList.toggle("active-toggle");
+            })
+        });
+    </script>
 </body>
 </html>
