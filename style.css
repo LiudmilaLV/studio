@@ -10,7 +10,7 @@ body {
 }
 
 .page {
-    margin: 60px 20px 0 20px;
+    margin: 60px 25px 0 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -197,16 +197,39 @@ a {
     padding-left: 30px;
 }
 
+#contacts {
+    flex-direction: column;
+}
+
+.footer {
+    flex-wrap: wrap;
+}
 .socials {
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
 }
 
 .socials > div > a > img {
-    max-height: 40px;
+    max-height: 50px;
 }
 
-@media only screen and (min-width: 415px) {
+.copyright > div > a > img {
+    max-height: 22px;
+}
+
+.copyright {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: grey;
+}
+
+@media only screen and (min-width: 768px) {
     .section {
         width: 50%;
     }
@@ -247,6 +270,16 @@ a {
 
     .artist-info {
         flex: 1;
+    }
+
+    .footer {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .section {
+        width: 100%;
     }
 }
 
