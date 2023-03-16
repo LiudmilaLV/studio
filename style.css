@@ -36,6 +36,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     height: 60px;
+    border-bottom: 1px solid grey;
 }
 
 .nav > li {
@@ -89,7 +90,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Lora', serif;
-    list-style-type: disc;
+    list-style-type: circle;
 }
 
 .artist {
@@ -158,9 +159,8 @@ a {
 
 .content-box {
     position: relative;
-    border-bottom: 1px solid #000;
-    padding: 10px;
-
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
 }
 
 .question {
@@ -264,7 +264,7 @@ a {
     flex-direction: row;
     }
 
-    .reversed {
+    .rev {
         flex-direction: row-reverse;
     }
 
@@ -286,10 +286,49 @@ a {
 @media only screen and (min-width: 961px) {
     .page {
     width: 960px;
-    margin: 60px auto 0 auto;
+    margin: -50px auto;
+    gap: 3rem;
     }
 
     .section {
         width: 80%;
+    }
+    .about {
+        padding-left: 0 10px;
+        list-style-type: circle;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .header {
+    position: relative;
+    top: 132px;
+    left: 180px;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    margin: 0 0 10px 10px;
+    }
+
+    .logo {
+        max-width: 180px;
+    }
+    .artist {
+        padding: 10px 20px;
+    }
+
+    #about-artists {
+        margin-top: -40px;
+    }
+
+    .not-rev {
+        border-top: 1px solid grey;
+        border-left: 1px solid grey;
+    }
+
+    .rev {
+        border-top: 1px solid grey;
+        border-right: 1px solid grey;
     }
 }
