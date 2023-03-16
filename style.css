@@ -10,7 +10,7 @@ body {
 }
 
 .page {
-    margin: 60px 20px 0 20px;
+    margin: 60px 25px 0 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -160,7 +160,7 @@ a {
     position: relative;
     border-bottom: 1px solid #000;
     padding: 10px;
-    margin-left: 20px;
+
 }
 
 .question {
@@ -206,7 +206,7 @@ a {
     max-height: 40px;
 }
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 768px) {
     .section {
         width: 50%;
     }
@@ -247,6 +247,12 @@ a {
 
     .artist-info {
         flex: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .section {
+        width: 100%;
     }
 }
 
