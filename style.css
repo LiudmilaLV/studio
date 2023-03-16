@@ -197,6 +197,13 @@ a {
     padding-left: 30px;
 }
 
+#contacts {
+    flex-direction: column;
+}
+
+.footer {
+    flex-wrap: wrap;
+}
 .socials {
     display: flex;
     gap: 1rem;
