@@ -200,10 +200,26 @@ a {
 .socials {
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
 }
 
 .socials > div > a > img {
-    max-height: 40px;
+    max-height: 50px;
+}
+
+.copyright > div > a > img {
+    max-height: 22px;
+}
+
+.copyright {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: grey;
 }
 
 @media only screen and (min-width: 768px) {
@@ -247,6 +263,10 @@ a {
 
     .artist-info {
         flex: 1;
+    }
+
+    .footer {
+        justify-content: space-between;
     }
 }
 
