@@ -10,7 +10,7 @@ body {
 }
 
 .page {
-    margin: 68px 25px 0 5px;
+    margin: 72px 25px 0 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
