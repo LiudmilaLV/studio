@@ -201,6 +201,11 @@ a {
     flex-direction: column;
 }
 
+#map {
+    width: 100%;
+    max-height: 500px;
+}
+
 .footer {
     flex-wrap: wrap;
     padding: 8px 0;

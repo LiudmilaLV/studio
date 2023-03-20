@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Lora:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9d2d3599-8669-4f27-af3c-1a87c20f7624&lang=ru_RU"></script>
+    <script src="./assets/script.js"></script>
 </head>
 <body>
     <div class="page">
@@ -186,8 +188,8 @@
         <div class="section" id="contacts">
             <h2>Контакты</h2>
             <h3>г. Иркутск, ул. ​Свердлова, 26Б/1</h3>
-            <p>Тел. 123-456-789</p>
-            <div style="margin-top: 10px; width: 280px; height: 200px; border: 1px solid grey;"></div>
+            <p>Тел. +7‒908‒650‒18‒96</p>
+            <div id="map"></div>
         </div>
         <div class="nav footer">
             <div class="copyright">
@@ -204,14 +206,5 @@
             </div>
         </div>
     </div>
-    <script>
-        const accordion = document.querySelectorAll(".content-box");
-
-        accordion.forEach(el => {
-            el.addEventListener("click", function() {
-                this.classList.toggle("active-toggle");
-            })
-        });
-    </script>
 </body>
 </html>
