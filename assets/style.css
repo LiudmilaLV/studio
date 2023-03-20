@@ -218,10 +218,12 @@ a {
 
 .socials > div > a > img {
     max-height: 50px;
+    max-width: 50px;
 }
 
 .copyright > div > a > img {
     max-height: 22px;
+    max-width: 22px;
 }
 
 .copyright {
