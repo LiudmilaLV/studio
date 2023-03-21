@@ -64,7 +64,8 @@ h2 {
     font-size: 2.4rem;
 }
 
-h3 {
+h3,
+.address {
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-size: 1.4rem;
@@ -202,7 +203,7 @@ a {
 }
 
 #map {
-    margin: 1rem;
+    margin: 1rem 0;
     width: 100%;
     height: 400px;
 }
@@ -334,14 +335,4 @@ a {
     #about-artists {
         margin-top: -40px;
     }
-
-    /* .not-rev {
-        border-top: 1px solid grey;
-        border-left: 1px solid grey;
-    }
-
-    .rev {
-        border-top: 1px solid grey;
-        border-right: 1px solid grey;
-    } */
 }

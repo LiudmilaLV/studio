@@ -10,14 +10,29 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     
     // add Yandex maps
-    ymaps.ready(init);
+
+    let studioAddr = [52.285126, 104.285143];
 
     function init() {
         console.log(1)
-        let myMap = new ymaps.Map("map", {
-            center: [52.285126, 104.285143],
-            zoom: 16
+        let map = new ymaps.Map("map", {
+            center: studioAddr,
+            zoom: 17
         });
+    
+        let placemark = new ymaps.Placemark(studioAddr, {}, {
+            // iconLayout: "default#image",
+            // iconImageHref: "",
+            // iconImageSize: [40, 40],
+            // iconImageOffset: [, ]
+        });
+
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+
+        map.geoObjects.add(placemark);
     }
 
+    ymaps.ready(init);
 });
