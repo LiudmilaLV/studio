@@ -10,7 +10,7 @@ body {
 }
 
 .page {
-    margin: 72px 25px 0 5px;
+    margin-top: 72px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@ body {
 }
 
 .section {
-    width: 100%;
+    width: 96%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,6 @@ body {
     font-weight: 400;
     font-size: 1rem;
     height: 60px;
-    border-bottom: 1px solid grey;
 }
 
 .nav > li {
@@ -46,6 +45,7 @@ body {
 
 .item-fixed {
     background-color: #2b2b2b;
+    border-bottom: 1px solid #000;
     position: fixed;
     top: 0;
     left: 0;
@@ -87,7 +87,7 @@ p {
 }
 
 .about {
-    margin-left: 24px;
+    padding-left: 1rem;
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Lora', serif;
@@ -160,7 +160,7 @@ a {
 
 .content-box {
     position: relative;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #000;
     padding: 10px 0;
 }
 
@@ -211,7 +211,10 @@ a {
 .footer {
     flex-wrap: wrap;
     height: fit-content;
+    border-top: 1px solid #000;
+    padding: 1rem 0;
 }
+
 .socials {
     display: flex;
     gap: 1rem;
@@ -242,6 +245,7 @@ a {
 @media only screen and (min-width: 768px) {
     .section {
         width: 50%;
+        margin: 0;
     }
 
     #gallery {
@@ -293,7 +297,7 @@ a {
     }
 
     .section {
-        width: 100%;
+        width: 96%;
     }
 }
 
@@ -301,34 +305,34 @@ a {
     .page {
     width: 960px;
     margin: -50px auto;
-    gap: 3rem;
+    gap: 5rem;
     }
 
     .section {
         width: 80%;
     }
+    
+    .wide-scr-div {
+        width: 76%;
+        justify-self: flex-start;
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .about {
-        padding-left: 0 10px;
-        position: relative;
-        bottom: 40px;
+    flex-shrink: 0;
+    position: relative;
     }
 
     .header {
-    position: relative;
-    top: 132px;
-    left: 180px;
-    width: fit-content;
-    height: fit-content;
-    /* border-bottom: 1px solid grey;
-    border-left: 1px solid grey; */
-    margin: 0 0 10px 10px;
+        align-self: flex-start;
+        position: relative;
+        right: 4rem;
     }
 
     .logo {
         max-width: 180px;
-    }
-    .artist {
-        padding: 10px 20px;
     }
 
     #about-artists {
