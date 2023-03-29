@@ -32,9 +32,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    font-size: 1rem;
     height: 60px;
 }
 
@@ -42,6 +39,12 @@ body {
     display: inline;
     list-style: none;
     }
+
+/* .nav > li > a{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 1rem;
+} */
 
 .item-fixed {
     background-color: #2b2b2b;
@@ -66,6 +69,7 @@ h2 {
 
 h3,
 .address {
+    color: #EAC2C2;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-size: 1.4rem;
@@ -73,7 +77,7 @@ h3,
 
 .ital {
     font-style: italic;
-    color: grey;
+    color: #EAC2C2;
     padding: 5px 0;
 }
 
@@ -212,7 +216,7 @@ a {
     flex-wrap: wrap;
     height: fit-content;
     border-top: 1px solid #000;
-    padding: 1rem 0;
+    padding: 0.6rem 0;
 }
 
 .socials {
@@ -239,7 +243,7 @@ a {
 .copyright {
     font-family: 'Lora', serif;
     font-size: 1rem;
-    color: grey;
+    color: #EAC2C2;
 }
 
 @media only screen and (min-width: 768px) {
@@ -287,7 +291,7 @@ a {
     }
 
     .footer {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
@@ -337,5 +341,9 @@ a {
 
     #about-artists {
         margin-top: -40px;
+    }
+    .socials > div > a > img {
+        max-height: 60px;
+        max-width: 60px;
     }
 }
