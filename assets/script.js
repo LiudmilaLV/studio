@@ -35,4 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     ymaps.ready(init);
+
+    // add action button animation
+    let actionBtn = document.querySelector(".action-btn");
+
+    actionBtn.addEventListener("click", () => actionBtn.classList.toggle("active"));
+    
 });
