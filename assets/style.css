@@ -219,14 +219,14 @@ a {
 
 .action-btn {
     position: fixed;
-    bottom: 50px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    bottom: 40px;
+    right: 16px;
+    width: 60px;
+    height: 60px;
     background-color: #fefefe;
-    border: 3px solid #EAC2C2;
+    border: 2px solid #EAC2C2;
     border-radius: 50%;
-    box-shadow: 0 5px 10px #EAC2C2;
+    box-shadow: 0 5px 10px #dc7c7c;
     cursor: pointer;
     animation-name: blinking;
     animation-duration: 1s;
@@ -235,7 +235,7 @@ a {
 
 @keyframes blinking {
     50% {
-    border-color: #df7676;
+    border-color: #dc7c7c;
     }
 }
 
@@ -257,13 +257,14 @@ a {
 
 .action-btn ul {
     position: absolute;
-    bottom: 50px;
-    right: 50px;
-    background-color: #EAC2C2;
-    color: #000;
+    bottom: 10px;
+    right: 14px;
+    background-color: #fefefe;
+    border: 2px solid #EAC2C2;
+    box-shadow: 0 5px 10px #dc7c7c;
     font-style: italic;
     min-width: 240px;
-    padding: 10px;
+    padding: 4px 8px;
     border-radius: 5px;
     opacity: 0;
     visibility: hidden;
@@ -272,13 +273,17 @@ a {
 
 .action-btn.active ul {
     bottom: 90px;
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
     transition: 0.3s;
 }
 
 .action-btn ul li {
     list-style: none;
+}
+
+.action-btn ul li a {
+    color: #2b2b2b;
     display: flex;
     gap: 1rem;
     justify-content: flex-start;
@@ -444,5 +449,11 @@ footer {
         right: 120px;
         width: 80px;
         height: 80px;
+    }
+
+    .action-btn ul {
+        bottom: 50px;
+        right: 50px;
+        padding: 10px;
     }
 }
