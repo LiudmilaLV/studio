@@ -20,6 +20,7 @@ body {
     gap: 2rem;
 }
 
+section,
 .section {
     width: 96%;
     display: flex;
@@ -39,12 +40,6 @@ body {
     display: inline;
     list-style: none;
     }
-
-/* .nav > li > a{
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    font-size: 1rem;
-} */
 
 .item-fixed {
     background-color: #2b2b2b;
@@ -87,7 +82,7 @@ p,
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
     flex-shrink: 0;
 }
 
@@ -431,7 +426,7 @@ footer {
     position: relative;
     }
 
-    .header {
+    .hero {
         align-self: flex-start;
         position: relative;
         right: 4rem;
