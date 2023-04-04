@@ -182,6 +182,14 @@ a {
     cursor: pointer;
 }
 
+.question-content > ul {
+    margin: 1.6rem;
+}
+
+.heart-emoji {
+    list-style-type: "♡ ";
+}
+
 .accordion > .content-box > .question::before {
     content: "+";
     position: absolute;
