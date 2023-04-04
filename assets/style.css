@@ -100,8 +100,7 @@ p,
 
 .artist {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-flow: row nowrap;
     gap: 1rem;
 }
 
@@ -112,7 +111,7 @@ p,
 .photo {
     align-self: center;
     display: flex;
-    width: 150px;
+    max-width: 150px;
     flex-shrink: 0;
 }
 
