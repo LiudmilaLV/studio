@@ -100,6 +100,8 @@ p,
 
 .artist {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -110,8 +112,8 @@ p,
 .photo {
     align-self: center;
     display: flex;
+    width: 150px;
     flex-shrink: 0;
-    gap: 1rem;
 }
 
 .img-rel-two {
