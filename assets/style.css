@@ -1,3 +1,12 @@
+:root {
+    --primary: #2b2b2b;
+    --secondary:  #fefefe;
+    --emphasize: #EAC2C2;
+    --emphasize-dark: #000;
+    --emphasize-bright: #d25959;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +15,7 @@
 }
 
 body {
-    background-color: #2b2b2b;
+    background-color: var(--primary);
 }
 
 .page {
@@ -15,7 +24,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--secondary);
     gap: 2rem;
 }
 
@@ -41,8 +50,8 @@ section,
     }
 
 .item-fixed {
-    background-color: #2b2b2b;
-    border-bottom: 1px solid #000;
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--emphasize-dark);
     position: fixed;
     top: 0;
     left: 0;
@@ -53,6 +62,7 @@ h1 {
     font-family: 'EB Garamond', serif;
     font-weight: 700;
     font-size: 3rem;
+    text-shadow: 0 4px 8px var(--emphasize-bright);
 }
 
 h2 {
@@ -63,7 +73,7 @@ h2 {
 
 h3,
 .address {
-    color: #EAC2C2;
+    color: var(--emphasize);
     font-family: 'EB Garamond', serif;
     font-weight: 400;
     font-size: 1.4rem;
@@ -71,17 +81,18 @@ h3,
 
 .ital {
     font-style: italic;
-    color: #EAC2C2;
+    color: var(--emphasize);
     padding: 5px 0;
 }
 
 p,
+.show-works,
 .action-btn ul li {
     font-family: 'Lora', serif;
 }
 
 .logo {
-    width: 86px;
+    width: 84px;
     flex-shrink: 0;
 }
 
@@ -101,17 +112,30 @@ p,
 .artist {
     display: flex;
     flex-flow: row nowrap;
-    gap: 1rem;
+    gap: 12px;
+    align-items: center;
 }
 
 .artist:nth-child(even) {
     flex-direction: row-reverse;
 } 
 
+.show-works {
+    margin-top: 8px;
+    max-width: 160px;
+    padding: 8px;
+    background-color: var(--primary);
+    border: 1px solid var(--emphasize);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px var(--emphasize-bright);
+    font-style: italic;
+    cursor: pointer;
+    color: var(--emphasize);
+}
+
 .photo {
     align-self: center;
     display: flex;
-    max-width: 150px;
     flex-shrink: 0;
 }
 
@@ -122,7 +146,7 @@ p,
 }
 
 .photo > div > img {
-    max-height: 150px;
+    max-height: 180px;
 }
 
 #gallery {
@@ -162,7 +186,7 @@ p,
 
 a {
     text-decoration: none;
-    color: #fefefe;
+    color: var(--secondary);
 }
 
 #faq {
@@ -171,7 +195,7 @@ a {
 
 .content-box {
     position: relative;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--emphasize-dark);
     padding: 10px 0;
 }
 
@@ -239,10 +263,10 @@ a {
     right: 16px;
     width: 60px;
     height: 60px;
-    background-color: #fefefe;
-    border: 2px solid #EAC2C2;
+    background-color: var(--secondary);
+    border: 2px solid var(--emphasize);
     border-radius: 50%;
-    box-shadow: 0 5px 10px #dc7c7c;
+    box-shadow: 0 5px 12px var(--emphasize-bright);
     cursor: pointer;
     animation-name: blinking;
     animation-duration: 1s;
@@ -251,7 +275,7 @@ a {
 
 @keyframes blinking {
     50% {
-    border-color: #dc7c7c;
+    border-color: var(--emphasize-bright);
     }
 }
 
@@ -262,22 +286,22 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #2b2b2b;
+    color: var(--primary);
     font-size: 2rem;
     transition: 0.3s ease-in-out;
 }
 
 .action-btn.active span {
-    transform: rotate(135deg);
+    transform: rotate(45deg);
 }
 
 .action-btn ul {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background-color: #fefefe;
-    border: 2px solid #EAC2C2;
-    box-shadow: 0 5px 10px #dc7c7c;
+    background-color: var(--secondary);
+    border: 2px solid var(--emphasize);
+    box-shadow: 0 5px 10px var(--emphasize-bright);
     font-style: italic;
     min-width: 254px;
     padding: 4px 8px;
@@ -299,7 +323,7 @@ a {
 }
 
 .action-btn ul li a {
-    color: #2b2b2b;
+    color: var(--primary);
     display: flex;
     gap: 1rem;
     justify-content: flex-start;
@@ -327,7 +351,7 @@ a {
 footer {
     flex-wrap: wrap;
     height: fit-content;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--emphasize-dark);
     padding: 0.6rem 0;
 }
 
@@ -355,7 +379,7 @@ footer {
 .copyright {
     font-family: 'Lora', serif;
     font-size: 1rem;
-    color: #EAC2C2;
+    color: var(--emphasize);
 }
 
 @media only screen and (min-width: 768px) {
@@ -451,6 +475,13 @@ footer {
     .our-artists {
         width: 60%;
         gap: 3rem;
+    }
+
+    .artist:hover {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px var(--emphasize);
+    cursor: pointer;
     }
 
     .action-btn {
