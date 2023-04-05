@@ -147,6 +147,7 @@ p,
 
 .photo > div > img {
     max-height: 180px;
+    max-width: 130px;
 }
 
 #gallery {
@@ -409,7 +410,8 @@ footer {
     }
 
     .photo > div > img {
-    max-height: 250px;
+    max-height: 300px;
+    max-width: 220px;
     }
 
     .action-btn {
