@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
             });
     
-    // add Yandex maps
 
+    // add Yandex maps
     let studioAddr = [52.285126, 104.285143];
 
     function init() {
@@ -27,18 +27,47 @@ document.addEventListener("DOMContentLoaded", () => {
             // iconImageOffset: [, ]
         });
 
-        map.controls.remove('searchControl'); // удаляем поиск
-        map.controls.remove('trafficControl'); // удаляем контроль трафика
-        map.controls.remove('rulerControl'); // удаляем контрол правил
-
+        map.controls.remove("searchControl"); // удаляем поиск
+        map.controls.remove("trafficControl"); // удаляем контроль трафика
+        map.controls.remove("rulerControl"); // удаляем контрол правил
         map.geoObjects.add(placemark);
     }
 
     ymaps.ready(init);
 
-    // add action button animation
-    let actionBtn = document.querySelector(".action-btn");
 
-    actionBtn.addEventListener("click", () => actionBtn.classList.toggle("active"));
-    
+    // add action button animation
+    const button = document.querySelector(".action-btn");
+    const banner = document.querySelector(".banner");
+
+    // global open/close functions
+    const open = () => {
+        button.classList.add("open-button");
+        banner.classList.add("open-banner");
+    }
+    const close = () => {
+        button.classList.remove("open-button");
+        banner.classList.remove("open-banner");
+    }
+
+    // check click on button
+    button.addEventListener("mousedown",  () => {
+        if (!button.classList.contains("open-button")) {
+            open()
+        }
+        else {
+            close()
+        }
+    });
+
+    // close when user clicks outside
+    document.body.addEventListener("mousedown", (e) => {
+        let isClickInsideButton = button.contains(e.target);
+        let isClickInsideBanner = banner.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close ();
+        }
+    });
+
 });
