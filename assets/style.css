@@ -118,7 +118,7 @@ p,
 
 .artist:nth-child(even) {
     flex-direction: row-reverse;
-} 
+}
 
 .show-works {
     margin-top: 8px;
@@ -131,6 +131,18 @@ p,
     font-style: italic;
     cursor: pointer;
     color: var(--emphasize);
+    background-position: center;
+    transition: background 0.5s;
+}
+
+.show-works:hover {
+    background: var(--primary) radial-gradient(circle, transparent 1%, var(--primary) 1%) center/15000%;
+}
+
+.show-works:active {
+    background-color: var(--emphasize-bright);
+    background-size: 100%;
+    transition: background 0s;
 }
 
 .photo {
@@ -368,8 +380,8 @@ footer {
 }
 
 .social-img {
-    max-height: 46px;
-    max-width: 46px;
+    height: 45px;
+    width: 45px;
 }
 
 .copyright > div > a > img {
@@ -412,6 +424,12 @@ footer {
     .photo > div > img {
     max-height: 300px;
     max-width: 220px;
+    }
+
+    .show-works {
+        margin-top: 1rem;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
     }
 
     .action-btn {
