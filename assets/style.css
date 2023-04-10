@@ -1,9 +1,20 @@
-:root {
+/* :root {
     --primary: #2b2b2b;
     --secondary:  #fefefe;
     --emphasize: #EAC2C2;
     --emphasize-dark: #000;
     --emphasize-bright: #d25959;
+    #7DCA91
+    #5DCF3A;
+
+} */
+
+:root {
+    --primary: #262626;
+    --secondary:  #fefefe;
+    --emphasize: #7DCA91;
+    --emphasize-dark: #000;
+    --emphasize-bright: #CBE315;
 
 }
 
@@ -127,7 +138,7 @@ p,
     background-color: var(--primary);
     border: 1px solid var(--emphasize);
     border-radius: 5px;
-    box-shadow: 0 4px 6px var(--emphasize);
+    box-shadow: 0 4px 6px var(--emphasize-bright);
     font-style: italic;
     cursor: pointer;
     color: var(--emphasize);
@@ -140,7 +151,7 @@ p,
 }
 
 .show-works:active {
-    background-color: var(--emphasize);
+    background-color: var(--emphasize-bright);
     background-size: 100%;
     transition: background 0s;
 }
@@ -500,7 +511,7 @@ footer {
     .artist:hover {
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 0 4px 10px var(--emphasize);
+    box-shadow: 0 4px 10px var(--emphasize-bright);
     cursor: pointer;
     }
 
