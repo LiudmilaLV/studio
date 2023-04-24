@@ -125,6 +125,7 @@ p,
     flex-flow: row nowrap;
     gap: 12px;
     align-items: center;
+    justify-content: center;
 }
 
 /* .artist:hover,
@@ -140,6 +141,8 @@ p,
 }
 
 .show-works {
+    display: block;
+    text-align: center;
     margin-top: 8px;
     max-width: 160px;
     padding: 8px;
@@ -172,15 +175,14 @@ p,
 }
 
 .works.open-banner {
-    position: relative;
     visibility: visible;
     transition: 0.3ms;
     opacity: 1;
 }
 
 .carousel {
-    width: 97vw;
-    height: 84vh;
+    width: 100vw;
+    height: 100vh;
     position: relative;
 }
 
@@ -625,7 +627,7 @@ footer {
     }
 
     .carousel {
-        width: 60vw;
-        height: 88vh;
+        width: 70vw;
+        height: 91vh;
     }
 }
