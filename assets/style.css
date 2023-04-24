@@ -167,6 +167,10 @@ p,
     transition: background 0s;
 }
 
+#jane-works {
+    z-index: 99990;
+}
+
 .works {
     position: absolute;
     visibility: hidden;
@@ -176,7 +180,7 @@ p,
 
 .works.open-banner {
     visibility: visible;
-    transition: 0.3ms;
+    transition: 0.3s;
     opacity: 1;
 }
 
@@ -194,7 +198,7 @@ p,
 
 .carousel-button {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     border: none;
     font-size: 3rem;
     top: 50%;
@@ -249,7 +253,7 @@ p,
 
 .slide[data-active] {
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
     transition-delay: 0ms;
 }
 
@@ -605,13 +609,14 @@ footer {
         width: 200px;
     }
 
-    #about-artists {
-        margin-top: -40px;
-    }
-
     .our-artists {
         width: 60%;
         gap: 3rem;
+    }
+
+    .carousel {
+        width: 70vw;
+        height: 91vh;
     }
 
     .action-btn {
@@ -624,10 +629,5 @@ footer {
         bottom: 50px;
         right: 50px;
         padding: 10px;
-    }
-
-    .carousel {
-        width: 70vw;
-        height: 91vh;
     }
 }
