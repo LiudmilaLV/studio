@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // add "show works" carousel animation for Jane
+    // add "show works" carousel animation
     const carButtons = document.querySelectorAll("[data-carousel-button]");
 
     carButtons.forEach(button => {
@@ -116,4 +116,146 @@ document.addEventListener("DOMContentLoaded", () => {
             delete activeSlide.dataset.active
         })
     })
+
+
+    // add "show works" button for milena
+    const milenaButton = document.getElementById("milena-button");
+    const milenaWorks = document.getElementById("milena-works");
+    const milenaClose = document.getElementById("milena-close-carousel");
+
+    // check click on milena's "show works" button
+    milenaButton.addEventListener("mousedown",  () => {
+        if (!milenaButton.classList.contains("open-button")) {
+            open(milenaButton, milenaWorks)
+        }
+        else {
+            close(milenaButton, milenaWorks)
+        }
+    });
+
+    // close when "X" close button is clicked
+    milenaClose.addEventListener("click", () => close(milenaButton, milenaWorks));
+    
+    // close when user clicks outside of milena's "show works" button
+    document.body.addEventListener("mousedown", (e) => {
+        let isClickInsideButton = milenaButton.contains(e.target);
+        let isClickInsideBanner = milenaWorks.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close(milenaButton, milenaWorks);
+        }
+    });
+
+    // add "show works" button for polina
+    const polinaButton = document.getElementById("polina-button");
+    const polinaWorks = document.getElementById("polina-works");
+    const polinaClose = document.getElementById("polina-close-carousel");
+
+    // check click on polina's "show works" button
+    polinaButton.addEventListener("mousedown",  () => {
+        if (!polinaButton.classList.contains("open-button")) {
+            open(polinaButton, polinaWorks)
+        }
+        else {
+            close(polinaButton, polinaWorks)
+        }
+    });
+
+    // close when "X" close button is clicked
+    polinaClose.addEventListener("click", () => close(polinaButton, polinaWorks));
+    
+    // close when user clicks outside of polina's "show works" button
+    document.body.addEventListener("mousedown", (e) => {
+        let isClickInsideButton = polinaButton.contains(e.target);
+        let isClickInsideBanner = polinaWorks.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close(polinaButton, polinaWorks);
+        }
+    });
+
+
+    // add "show works" button for anastasia
+    const anastasiaButton = document.getElementById("anastasia-button");
+    const anastasiaWorks = document.getElementById("anastasia-works");
+    const anastasiaClose = document.getElementById("anastasia-close-carousel");
+
+    // check click on anastasia's "show works" button
+    anastasiaButton.addEventListener("mousedown",  () => {
+        if (!anastasiaButton.classList.contains("open-button")) {
+            open(anastasiaButton, anastasiaWorks)
+        }
+        else {
+            close(anastasiaButton, anastasiaWorks)
+        }
+    });
+
+    // close when "X" close button is clicked
+    anastasiaClose.addEventListener("click", () => close(anastasiaButton, anastasiaWorks));
+    
+    // close when user clicks outside of anastasia's "show works" button
+    document.body.addEventListener("mousedown", (e) => {
+        let isClickInsideButton = anastasiaButton.contains(e.target);
+        let isClickInsideBanner = anastasiaWorks.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close(anastasiaButton, anastasiaWorks);
+        }
+    });
+
+    // add "show works" button for juliya
+    const juliyaButton = document.getElementById("juliya-button");
+    const juliyaWorks = document.getElementById("juliya-works");
+    const juliyaClose = document.getElementById("juliya-close-carousel");
+
+    // check click on juliya's "show works" button
+    juliyaButton.addEventListener("mousedown",  () => {
+        if (!juliyaButton.classList.contains("open-button")) {
+            open(juliyaButton, juliyaWorks)
+        }
+        else {
+            close(juliyaButton, juliyaWorks)
+        }
+    });
+
+    // close when "X" close button is clicked
+    juliyaClose.addEventListener("click", () => close(juliyaButton, juliyaWorks));
+    
+    // close when user clicks outside of juliya's "show works" button
+    document.body.addEventListener("mousedown", (e) => {
+        let isClickInsideButton = juliyaButton.contains(e.target);
+        let isClickInsideBanner = juliyaWorks.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close(juliyaButton, juliyaWorks);
+        }
+    });
+
+    // add "show works" button for sonya
+    const sonyaButton = document.getElementById("sonya-button");
+    const sonyaWorks = document.getElementById("sonya-works");
+    const sonyaClose = document.getElementById("sonya-close-carousel");
+
+    // check click on sonya's "show works" button
+    sonyaButton.addEventListener("mousedown",  () => {
+        if (!sonyaButton.classList.contains("open-button")) {
+            open(sonyaButton, sonyaWorks)
+        }
+        else {
+            close(sonyaButton, sonyaWorks)
+        }
+    });
+
+    // close when "X" close button is clicked
+    sonyaClose.addEventListener("click", () => close(sonyaButton, sonyaWorks));
+    
+    // close when user clicks outside of sonya's "show works" button
+    document.body.addEventListener("mousedown", (e) => {
+        let isClickInsideButton = sonyaButton.contains(e.target);
+        let isClickInsideBanner = sonyaWorks.contains(e.target);
+
+        if (!isClickInsideButton && !isClickInsideBanner) {
+            close(sonyaButton, sonyaWorks);
+        }
+    });
 });

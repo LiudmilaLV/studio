@@ -159,7 +159,12 @@ p,
     transition: background 0s;
 }
 
-#jane-works {
+#jane-works,
+#milena-works,
+#polina-works,
+#anastasia-works,
+#juliya-works,
+#sonya-works {
     z-index: 99990;
     position: fixed;
     top: 60px;
@@ -410,7 +415,8 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.open-button span {
+.open-button span,
+.open-button span:focus {
     transform: rotate(20deg);
 }
 
@@ -451,7 +457,8 @@ a {
     transition: 0.3s;
 }
 
-.banner li:hover {
+.banner li:hover,
+.banner li:focus {
     font-weight: 700;
 }
 
