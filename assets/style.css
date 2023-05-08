@@ -128,14 +128,6 @@ p,
     justify-content: center;
 }
 
-/* .artist:hover,
-.artist:focus {
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px var(--emphasize-bright);
-    cursor: pointer;
-    } */
-
 .artist:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -169,6 +161,8 @@ p,
 
 #jane-works {
     z-index: 99990;
+    position: fixed;
+    top: 60px;
 }
 
 .works {
