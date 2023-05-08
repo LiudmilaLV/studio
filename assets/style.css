@@ -160,7 +160,7 @@ p,
 }
 
 #jane-works,
-#milena-works,
+#mylena-works,
 #polina-works,
 #anastasia-works,
 #juliya-works,
@@ -269,8 +269,8 @@ p,
 }
 
 .photo > div > img {
-    max-height: 180px;
-    max-width: 130px;
+    max-height: 210px;
+    width: 140px;
 }
 
 #gallery {
@@ -415,8 +415,7 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.open-button span,
-.open-button span:focus {
+.open-button span {
     transform: rotate(20deg);
 }
 
@@ -539,8 +538,8 @@ footer {
     }
 
     .photo > div > img {
-    max-height: 300px;
-    max-width: 220px;
+        max-height: 380px;
+        width: 240px;
     }
 
     .show-works {

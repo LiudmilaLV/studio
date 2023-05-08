@@ -118,31 +118,31 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-    // add "show works" button for milena
-    const milenaButton = document.getElementById("milena-button");
-    const milenaWorks = document.getElementById("milena-works");
-    const milenaClose = document.getElementById("milena-close-carousel");
+    // add "show works" button for mylena
+    const mylenaButton = document.getElementById("mylena-button");
+    const mylenaWorks = document.getElementById("mylena-works");
+    const mylenaClose = document.getElementById("mylena-close-carousel");
 
-    // check click on milena's "show works" button
-    milenaButton.addEventListener("mousedown",  () => {
-        if (!milenaButton.classList.contains("open-button")) {
-            open(milenaButton, milenaWorks)
+    // check click on mylena's "show works" button
+    mylenaButton.addEventListener("mousedown",  () => {
+        if (!mylenaButton.classList.contains("open-button")) {
+            open(mylenaButton, mylenaWorks)
         }
         else {
-            close(milenaButton, milenaWorks)
+            close(mylenaButton, mylenaWorks)
         }
     });
 
     // close when "X" close button is clicked
-    milenaClose.addEventListener("click", () => close(milenaButton, milenaWorks));
+    mylenaClose.addEventListener("click", () => close(mylenaButton, mylenaWorks));
     
-    // close when user clicks outside of milena's "show works" button
+    // close when user clicks outside of mylena's "show works" button
     document.body.addEventListener("mousedown", (e) => {
-        let isClickInsideButton = milenaButton.contains(e.target);
-        let isClickInsideBanner = milenaWorks.contains(e.target);
+        let isClickInsideButton = mylenaButton.contains(e.target);
+        let isClickInsideBanner = mylenaWorks.contains(e.target);
 
         if (!isClickInsideButton && !isClickInsideBanner) {
-            close(milenaButton, milenaWorks);
+            close(mylenaButton, mylenaWorks);
         }
     });
 
