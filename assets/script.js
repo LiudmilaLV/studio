@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     
         let placemark = new ymaps.Placemark(studioAddr, {}, {
-            // iconLayout: "default#image",
-            // iconImageHref: "",
-            // iconImageSize: [40, 40],
-            // iconImageOffset: [, ]
+            iconLayout: "default#image",
+            iconImageHref: "assets/img/logo-icons/poiner_black.png",
+            iconImageSize: [150, 200],
+            iconImageOffset: [-55, -105]
         });
 
         map.controls.remove("searchControl"); // удаляем поиск

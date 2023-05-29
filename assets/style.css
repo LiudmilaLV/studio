@@ -456,8 +456,7 @@ a {
     transition: 0.3s;
 }
 
-.banner li:hover,
-.banner li:focus {
+.banner li:hover {
     font-weight: 700;
 }
 
