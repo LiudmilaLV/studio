@@ -9,13 +9,33 @@
 
 } */
 
-:root {
+/* acid green on very dark grey */
+/* :root {
     --primary: #262626;
     --secondary:  #fefefe;
     --emphasize: #7DCA91;
     --emphasize-dark: #000;
     --emphasize-bright: #CBE315;
 
+} */
+
+/* chocolate light brown */
+/* :root {
+    --primary: #604240;
+    --secondary:  #fefefe;
+    --emphasize: #9C8886;
+    --emphasize-dark: #3d2a29;
+    --emphasize-bright: #D7CFCF;
+} */
+
+
+/* chocolate brown */
+:root {
+    --primary: #4D3838;
+    --secondary:  #fefefe;
+    --emphasize: #D7D1D1;
+    --emphasize-dark: #140c0c;
+    --emphasize-bright: #A4DFCD;
 }
 
 * {
@@ -30,7 +50,7 @@ body {
 }
 
 .page {
-    margin-top: 72px;
+    margin-top: 60px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -48,7 +68,7 @@ section,
 }
 
 .nav {
-    width: 98%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -271,6 +291,12 @@ p,
 .photo > div > img {
     max-height: 210px;
     width: 140px;
+}
+
+#brown-hat {
+    width: 100vw;
+    height: 240px;
+    border-bottom: 1px solid var(--emphasize-dark);
 }
 
 #gallery {
@@ -526,6 +552,13 @@ footer {
     
     .logo {
     width: 120px;
+    }
+
+    #brown-hat {
+    margin-top: 110px;
+    width: 100vw;
+    height: 320px;
+    border-bottom: none;
     }
 
     .about {
