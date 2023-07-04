@@ -31,7 +31,8 @@
 
 /* chocolate brown */
 :root {
-    --primary: #4D3838;
+    /* --primary: #4D3838; */
+    --primary: #7d5f5f;
     --secondary:  #fefefe;
     --emphasize: #D7D1D1;
     --emphasize-dark: #140c0c;
@@ -120,19 +121,6 @@ p,
 .show-works,
 .action-btn ul li {
     font-family: 'Lora', serif;
-}
-
-.logo {
-    width: 84px;
-    flex-shrink: 0;
-}
-
-.about {
-    padding-left: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    font-family: 'Lora', serif;
-    list-style-type: none;
 }
 
 .our-artists {
@@ -299,6 +287,10 @@ p,
     border-bottom: 1px solid var(--emphasize-dark);
 }
 
+#brown-hat-big {
+    display: none;
+}
+
 #gallery {
     display: grid;
     width: 96%;
@@ -319,7 +311,6 @@ p,
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 5px;
 }
 
 .horizontal {
@@ -534,8 +525,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
     section,
-    .section,
-    .wide-scr-div {
+    .section {
         width: 70%;
         margin: 0;
     }
@@ -554,11 +544,15 @@ footer {
     width: 120px;
     }
 
+    #brown-hat-big {
+        display: block;
+        width: 100vw;
+        height: 766px;
+        border-bottom: none;
+    }
+
     #brown-hat {
-    margin-top: 110px;
-    width: 100vw;
-    height: 320px;
-    border-bottom: none;
+        display: none;
     }
 
     .about {
@@ -609,22 +603,12 @@ footer {
 @media only screen and (min-width: 961px) {
     .page {
     width: 960px;
-    margin: -50px auto;
     gap: 5rem;
     }
 
     section,
     .section {
         width: 80%;
-    }
-    
-    .wide-scr-div {
-        margin-left: 10rem;
-        width: 80%;
-        justify-content: center;
-        margin-top: 8rem;
-        display: flex;
-        flex-direction: row-reverse;
     }
 
     .about {
