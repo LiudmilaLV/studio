@@ -1,4 +1,5 @@
 
+
 /* acid green on very dark grey */
 /* :root {
     --primary: #262626;
@@ -20,13 +21,22 @@
 
 
 /* chocolate brown */
+/* :root {
+    --primary: #7d5f5f;
+    --secondary:  #fefefe;
+    --emphasize: #D7D1D1;
+    --emphasize-dark: #140c0c;
+    --emphasize-bright: #A4DFCD;
+} */
+
+/* chocolate brown but with contrast*/
 :root {
     /* --primary: #4D3838; */
     --primary: #7d5f5f;
     --secondary:  #fefefe;
-    --emphasize: #a7f3dc;
+    --emphasize: #C9EEE1;
     --emphasize-dark: #140c0c;
-    --emphasize-bright: #8dedd0;
+    --emphasize-bright: #BEF8A5;
 }
 
 * {
@@ -274,7 +284,7 @@ p,
 #brown-hat {
     width: 100vw;
     height: 240px;
-    border-bottom: 1px solid var(--emphasize-dark);
+    border-radius: 0;
 }
 
 #brown-hat-big {
@@ -302,6 +312,7 @@ p,
     object-fit: cover;
     object-position: center;
     border-radius: 5px;
+    box-shadow: 0 5px 12px var(--emphasize-bright);
 }
 
 .horizontal {
@@ -540,6 +551,7 @@ footer {
         width: 100vw;
         height: 766px;
         border-bottom: none;
+        box-shadow: none;
     }
 
     #brown-hat {
