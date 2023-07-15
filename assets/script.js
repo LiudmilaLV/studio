@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let studioAddr = [52.285126, 104.285143];
 
     function init() {
-        console.log(1)
         let map = new ymaps.Map("map", {
             center: studioAddr,
             zoom: 17
@@ -98,25 +97,62 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const scrollImage = (element, offset) => {
+        const slides = element.closest("[data-carousel]").querySelector("[data-slides]");
+        const activeSlide = slides.querySelector("[data-active]");
+        let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+
+        if (newIndex < 0) newIndex = slides.children.length - 1;
+        if (newIndex >= slides.children.length) newIndex = 0;
+
+        slides.children[newIndex].dataset.active = true;
+        delete activeSlide.dataset.active
+    }
 
     // add "show works" carousel animation
     const carButtons = document.querySelectorAll("[data-carousel-button]");
-
     carButtons.forEach(button => {
-        button.addEventListener("click", () => {
-            const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-            const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
-            const activeSlide = slides.querySelector("[data-active]");
-            let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-
-            if (newIndex < 0) newIndex = slides.children.length - 1;
-            if (newIndex >= slides.children.length) newIndex = 0;
-
-            slides.children[newIndex].dataset.active = true;
-            delete activeSlide.dataset.active
+        button.addEventListener("click", (event) => {
+            const element = event.currentTarget;
+            const offset = element.dataset.carouselButton === "next" ? 1 : -1;
+            scrollImage(element, offset);
         })
     })
 
+    // add mobile touch swipe events
+    const touchThreshold = 100;
+    let touchStartX = null;
+    const onTouchStart = (event) => {
+        touchStartX = event.touches[0].clientX;
+    };
+    const onTouchMove = (event) => {
+        if (touchStartX === null) {
+            return;
+        }
+
+        let touchEndX = event.touches[0].clientX;
+        let offset = touchStartX - touchEndX;
+
+        if (Math.abs(offset) > touchThreshold) {
+            const carousel = event.target.closest('.carousel');
+            if (offset > 0) {
+                const nextButton = carousel.querySelector('[data-carousel-button="next"]');
+                nextButton.click();
+                nextButton.focus();
+            } else {
+                const prevButton = carousel.querySelector('[data-carousel-button="prev"]');
+                prevButton.click();
+                prevButton.focus();
+            }
+            touchStartX = null; // reset
+        }
+    };
+
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        carousel.addEventListener('touchstart', onTouchStart, false);
+        carousel.addEventListener('touchmove', onTouchMove, false);
+    });
 
     // add "show works" button for mylena
     const mylenaButton = document.getElementById("mylena-button");
