@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.css" integrity="sha512-zdX1vpRJc7+VHCUJcExqoI7yuYbSFAbSWxscAoLF0KoUPvMSAK09BaOZ47UFdP4ABSXpevKfcD0MTVxvh0jLHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="page">
@@ -43,7 +44,7 @@
         <section class="our-artists" id="about-artists">
             <div class="artist">
                 <div class="photo">
-                    <div class="flex-img-div"><img class="flex-img" src="./assets/img/Jane/Jane.jpeg" alt="Фотография тату-мастера Евгении"></div>
+                    <div class="flex-img-div"><img class="flex-img" src="assets/img/art_photos/Jane/thumbs/Jane.jpeg" alt="Фотография тату-мастера Евгении"></div>
                 </div>
                 <div>
                     <h2>Евгения</h2>
@@ -53,24 +54,19 @@
                     <a class="show-works" id="jane-button" href="#jane-works">Смотреть работы</a>
                 </div>
                 <div id="jane-works" class="works">
-                    <div class="carousel" data-carousel>
-                        <button class="carousel-button prev" data-carousel-button="prev">&#8701;</button>
-                        <button class="carousel-button next" data-carousel-button="next">&#8702;</button>
-                        <button class="carousel-button close-carousel" id="jane-close-carousel">&#10005;</button>
-                        <ul data-slides>
-                            <li class="slide" data-active> <img class="flex-img" src="assets/img/Jane/1.jpg" alt=""></li>
-                            <li class="slide" > <img class="flex-img" src="assets/img/Jane/2.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Jane/3.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Jane/4.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Jane/5c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Jane/6.jpg" alt=""></li>
-                        </ul>
-                    </div>
+                    <ul class="artist-gallery">
+                        <li><img data-src="./assets/img/art_photos/Jane/1.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Jane/2.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Jane/3.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Jane/4.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Jane/5c.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Jane/6.jpg"></li>
+                    </ul>
                 </div>
             </div>
             <div class="artist">
                 <div class="photo">
-                    <div class="flex-img-div"><img class="flex-img" src="./assets/img/Mylena/Mylena.jpeg" alt="Фотография тату-мастера Милены"></div>
+                    <div class="flex-img-div"><img class="flex-img" src="assets/img/art_photos/Mylena/thumbs/Mylena.jpeg" alt="Фотография тату-мастера Милены"></div>
                 </div>
                 <div>
                     <h2>Милена</h2>
@@ -80,24 +76,18 @@
                     <a class="show-works" id="mylena-button" href="#mylena-works">Смотреть работы</a>
                 </div>
                 <div id="mylena-works" class="works">
-                    <div class="carousel" data-carousel>
-                        <button class="carousel-button prev" data-carousel-button="prev">&#8701;</button>
-                        <button class="carousel-button next" data-carousel-button="next">&#8702;</button>
-                        <button class="carousel-button close-carousel" id="mylena-close-carousel">&#10005;</button>
-                        <ul data-slides>
-                            <li class="slide" data-active> <img class="flex-img" src="assets/img/Mylena/milya_05_23_1c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Mylena/milya_05_23_2c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Mylena/milya_05_23_3c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Mylena/milya_05_23_4.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Mylena/milya_05_23_5c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Mylena/milya_05_23_6c.jpg" alt=""></li>
-                        </ul>
-                    </div>
+                    <ul class="artist-gallery">
+                        <li><img data-src="./assets/img/art_photos/Mylena/milya_05_23_1c.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Mylena/milya_05_23_2c.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Mylena/milya_05_23_4.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Mylena/milya_05_23_5c.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Mylena/milya_05_23_6c.jpg"></li>
+                    </ul>
                 </div>
             </div>
             <div class="artist">
                 <div class="photo">
-                    <div class="flex-img-div"><img class="flex-img" src="./assets/img/Polina/Polina.jpeg" alt="Фотография тату-мастера Полины"></div>
+                    <div class="flex-img-div"><img class="flex-img" src="assets/img/art_photos/Polina/thumbs/Polina.jpeg" alt="Фотография тату-мастера Полины"></div>
                 </div>
                 <div>
                     <h2>Полина</h2>
@@ -107,24 +97,19 @@
                     <a class="show-works" id="polina-button" href="#polina-works">Смотреть работы</a>
                 </div>
                 <div id="polina-works" class="works">
-                    <div class="carousel" data-carousel>
-                        <button class="carousel-button prev" data-carousel-button="prev">&#8701;</button>
-                        <button class="carousel-button next" data-carousel-button="next">&#8702;</button>
-                        <button class="carousel-button close-carousel" id="polina-close-carousel">&#10005;</button>
-                        <ul data-slides>
-                            <li class="slide" data-active> <img class="flex-img" src="assets/img/Polina/Polina_05_23_1.jpeg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Polina/Polina_05_23_2.jpeg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Polina/Polina_05_23_3.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Polina/Polina_05_23_4.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Polina/Polina_05_23_5.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Polina/Polina_05_23_6.jpg" alt=""></li>
-                        </ul>
-                    </div>
+                    <ul class="artist-gallery">
+                        <li><img data-src="./assets/img/art_photos/Polina/Polina_05_23_1.jpeg"></li>
+                        <li><img data-src="./assets/img/art_photos/Polina/Polina_05_23_2.jpeg"></li>
+                        <li><img data-src="./assets/img/art_photos/Polina/Polina_05_23_3.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Polina/Polina_05_23_4.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Polina/Polina_05_23_5.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Polina/Polina_05_23_6.jpg"></li>
+                    </ul>
                 </div>
             </div>
             <div class="artist">
                 <div class="photo">
-                    <div class="flex-img-div"><img class="flex-img" src="./assets/img/Anastasia/Anastasia.jpeg" alt="Фотография тату-мастера Анастасии"></div>
+                    <div class="flex-img-div"><img class="flex-img" src="assets/img/art_photos/Anastasia/thumbs/Anastasia.jpeg" alt="Фотография тату-мастера Анастасии"></div>
                 </div>
                 <div>
                     <h2>Анастасия</h2>
@@ -134,24 +119,19 @@
                     <a class="show-works" id="anastasia-button" href="#anastasia-works">Смотреть работы</a>
                 </div>
                 <div id="anastasia-works" class="works">
-                    <div class="carousel" data-carousel>
-                        <button class="carousel-button prev" data-carousel-button="prev">&#8701;</button>
-                        <button class="carousel-button next" data-carousel-button="next">&#8702;</button>
-                        <button class="carousel-button close-carousel" id="anastasia-close-carousel">&#10005;</button>
-                        <ul data-slides>
-                            <li class="slide" data-active> <img class="flex-img" src="assets/img/Anastasia/Anastasia_05_23_1.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Anastasia/Anastasia_05_23_2c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Anastasia/Anastasia_05_23_3.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Anastasia/Anastasia_05_23_4.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Anastasia/Anastasia_05_23_5c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Anastasia/Anastasia_05_23_6.jpg" alt=""></li>
-                        </ul>
-                    </div>
+                    <ul class="artist-gallery">
+                        <li><img data-src="./assets/img/art_photos/Anastasia/Anastasia_05_23_1.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Anastasia/Anastasia_05_23_2c.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Anastasia/Anastasia_05_23_3.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Anastasia/Anastasia_05_23_4.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Anastasia/Anastasia_05_23_5c.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Anastasia/Anastasia_05_23_6.jpg"></li>
+                    </ul>
                 </div>
             </div>
             <div class="artist">
                 <div class="photo">
-                    <div class="flex-img-div"><img class="flex-img" src="./assets/img/Juliya/Juliya.jpeg" alt="Фотография тату-мастера Юлии"></div>
+                    <div class="flex-img-div"><img class="flex-img" src="assets/img/art_photos/Juliya/thumbs/Juliya.jpeg" alt="Фотография тату-мастера Юлии"></div>
                 </div>
                 <div>
                     <h2>Юлия</h2>
@@ -161,24 +141,19 @@
                     <a class="show-works" id="juliya-button" href="#juliya-works">Смотреть работы</a>
                 </div>
                 <div id="juliya-works" class="works">
-                    <div class="carousel" data-carousel>
-                        <button class="carousel-button prev" data-carousel-button="prev">&#8701;</button>
-                        <button class="carousel-button next" data-carousel-button="next">&#8702;</button>
-                        <button class="carousel-button close-carousel" id="juliya-close-carousel">&#10005;</button>
-                        <ul data-slides>
-                            <li class="slide" data-active> <img class="flex-img" src="assets/img/Juliya/Juliya_23_05_1.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Juliya/vertical_juliya4.jpeg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Juliya/normal_yuliya6.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Juliya/Juliya_23_05_4c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Juliya/Juliya_23_05_5.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Juliya/Juliya_23_05_6.jpg" alt=""></li>
-                        </ul>
-                    </div>
+                    <ul class="artist-gallery">
+                        <li><img data-src="./assets/img/art_photos/Juliya/Juliya_23_05_1.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Juliya/vertical_juliya4.jpeg"></li>
+                        <li><img data-src="./assets/img/art_photos/Juliya/normal_yuliya6.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Juliya/Juliya_23_05_4c.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Juliya/Juliya_23_05_5.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Juliya/Juliya_23_05_6.jpg"></li>
+                    </ul>
                 </div>
             </div>
             <div class="artist">
                 <div class="photo">
-                    <div class="flex-img-div"><img class="flex-img" src="./assets/img/Sonya/Sonya.jpeg" alt="Фотография тату-мастера Сони"></div>
+                    <div class="flex-img-div"><img class="flex-img" src="assets/img/art_photos/Sonya/thumbs/Sonya.jpeg" alt="Фотография тату-мастера Сони"></div>
                 </div>
                 <div>
                     <h2>Соня</h2>
@@ -188,56 +163,116 @@
                     <a class="show-works" id="sonya-button" href="#sonya-works">Смотреть работы</a>
                 </div>
                 <div id="sonya-works" class="works">
-                    <div class="carousel" data-carousel>
-                        <button class="carousel-button prev" data-carousel-button="prev">&#8701;</button>
-                        <button class="carousel-button next" data-carousel-button="next">&#8702;</button>
-                        <button class="carousel-button close-carousel" id="sonya-close-carousel">&#10005;</button>
-                        <ul data-slides>
-                            <li class="slide" data-active> <img class="flex-img" src="assets/img/Sonya/Sonya_05_23_1c.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Sonya/normal_Sonya1.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Sonya/normal_Sonya2.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Sonya/Sonya_05_23_4.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Sonya/Sonya_05_23_5.jpg" alt=""></li>
-                            <li class="slide"> <img class="flex-img" src="assets/img/Sonya/Sonya_05_23_6.jpg" alt=""></li>
-                        </ul>
-                    </div>
+                    <ul class="artist-gallery">
+                        <li><img data-src="./assets/img/art_photos/Sonya/normal_Sonya1.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Sonya/normal_Sonya2.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Sonya/Sonya_05_23_4.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Sonya/Sonya_05_23_5.jpg"></li>
+                        <li><img data-src="./assets/img/art_photos/Sonya/Sonya_05_23_6.jpg"></li>
+                    </ul>
                 </div>
             </div>
         </section>
         <div id="gallery">
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/Sonya/normal_Sonya1.jpg" alt="Здесь и ниже: примеры татуировок в тату-студии Датура"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/02hknjgfN_8.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/dLDUh6VxbU8.jpg"></div>
-            <div class="big flex-img-div"><img class="flex-img" src="./assets/img/gallery/9j-k1pOZhXs.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/36lZ8u7Vr6Q.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/NsHQjO63GBg.jpg"></div>
-            <div class="big flex-img-div"><img class="flex-img" src="./assets/img/Polina/normal_polina1.jpeg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/ApqvZZ-JzEk.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/WlE3BQTZsdE.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/ro3tOlo-f3Y.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/Sonya/Sonya_05_23_4.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/c6o7wsuL_tI.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/cTX5TaZq2dM.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/fleyrJQ95do.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/Duy1K5MLtnk.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/EPEs8XEik04.jpg"></div>
-            <div class="big flex-img-div"><img class="flex-img" src="./assets/img/gallery/RrbFEhsqp2o.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/Vlad/vlad_1.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/DBH9zvLCSCU.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/Sonya/Sonya_05_23_6.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/N8zEmRyA03Q.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/V4y6HsGtG14.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/iE9X8F5HBbE.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/GBQkRvRFMo8.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/gallery/Wi8nTdl97mY.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/SghMwJkVet8.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/r58zBJb9LrE.jpg"></div>
-            <div class="vertical"><img class="flex-img" src="./assets/img/gallery/GxajXvLjw9c.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/Mylena/milya_05_23_1c.jpg"></div>
-            <div class="vertical flex-img-div"><img class="flex-img" src="./assets/img/gallery/Z9puCvgeDyM.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/Vlad/vlad_6.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/Sonya/normal_Sonya2.jpg"></div>
-            <div class="flex-img-div"><img class="flex-img" src="./assets/img/Juliya/normal_yuliya6.jpg"></div>            
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Sonya/thumbs/normal_Sonya1.jpg" alt="Здесь и ниже: примеры татуировок в тату-студии Датура">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/02hknjgfN_8.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/dLDUh6VxbU8.jpg">
+            </div>
+            <div class="big flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/9j-k1pOZhXs.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/36lZ8u7Vr6Q.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/NsHQjO63GBg.jpg">
+            </div>
+            <div class="big flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Polina/thumbs/normal_polina1.jpeg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/ApqvZZ-JzEk.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/WlE3BQTZsdE.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/ro3tOlo-f3Y.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Sonya/thumbs/Sonya_05_23_4.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/c6o7wsuL_tI.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/cTX5TaZq2dM.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/fleyrJQ95do.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/Duy1K5MLtnk.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/EPEs8XEik04.jpg">
+            </div>
+            <div class="big flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/RrbFEhsqp2o.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Vlad/thumbs/vlad_1.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/DBH9zvLCSCU.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Sonya/thumbs/Sonya_05_23_6.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/N8zEmRyA03Q.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/V4y6HsGtG14.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/iE9X8F5HBbE.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/GBQkRvRFMo8.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/Wi8nTdl97mY.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/SghMwJkVet8.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/r58zBJb9LrE.jpg">
+            </div>
+            <div class="vertical">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/GxajXvLjw9c.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Mylena/thumbs/milya_05_23_1c.jpg">
+            </div>
+            <div class="vertical flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/gallery/thumbs/Z9puCvgeDyM.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Vlad/thumbs/vlad_6.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Sonya/thumbs/normal_Sonya2.jpg">
+            </div>
+            <div class="flex-img-div">
+                <img class="flex-img" src="assets/img/art_photos/Juliya/thumbs/normal_yuliya6.jpg">
+            </div>
         </div>
         <section class="section" id="faq">
             <h2>FAQ</h2>
@@ -381,7 +416,7 @@
             <div class="flex-img-div" id="map"></div>
         </section>
         <div class="action-btn">
-            <span><img class="social-img" src="assets/img/socials/message.svg" alt=""></span>
+            <span><img class="social-img" src="assets/img/socials/message.svg"></span>
             <ul class="list-style-none banner">
                 <li><a href="https://t.me/passionfruittt"><img class="social-img" src="assets/img/socials/telegram.svg" alt="Открыть Телеграм">Написать нам в Telegram</a></li>
                 <li><a href="https://wa.me/79086501896"><img class="social-img" src="assets/img/socials/whatsapp.svg" alt="Открыть Ватсап">Написать нам в WhatsApp</a></li>
@@ -400,6 +435,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.js" integrity="sha512-f8kZwYACKF8unHuRV7j/5ILZfflRncxHp1f6y/PKuuRpCVgpORNZMne1jrghNzTVlXabUXIg1iJ5PvhuAaau6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=9d2d3599-8669-4f27-af3c-1a87c20f7624&lang=ru_RU"></script>
     <script src="./assets/script.js"></script>
 </body>
