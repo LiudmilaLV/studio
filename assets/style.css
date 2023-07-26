@@ -78,6 +78,51 @@ section,
     list-style: none;
 }
 
+#logo-container {
+    display: block;
+    width: 100vw;
+}
+
+#logo-container img {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+#logo-container .flex-img-div {
+    position: relative;
+    display: inline-block;
+}
+
+#logo-container .flex-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#logo-container .logo-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    box-shadow: none;
+}
+
+#logo-container h2 {
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+#logo-container ul {
+    color: #fefde7;
+    list-style: square;
+}
+
+#logo-container li {
+    margin-top: 5px;
+}
+
 .item-fixed {
     background-color: var(--primary);
     border-bottom: 1px solid var(--emphasize-dark);
@@ -187,16 +232,6 @@ p,
 .photo > div > img {
     max-height: 210px;
     width: 140px;
-}
-
-#brown-hat {
-    width: 100vw;
-    height: 240px;
-    border-radius: 0;
-}
-
-#brown-hat-big {
-    display: none;
 }
 
 #gallery {
@@ -430,7 +465,25 @@ footer {
     max-width: 22px;
 }
 
+@media only screen and (max-width: 768px) {
+    #logo-container .logo-text {
+        display: none;
+    }
+
+    #logo-container .big {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+    #logo-container .small {
+        display: none;
+    }
+
+    #logo-container .block {
+        display: none;
+    }
+
     section,
     .section {
         width: 70%;
@@ -449,14 +502,6 @@ footer {
 
     .logo {
         width: 120px;
-    }
-
-    #brown-hat-big {
-        display: block;
-        width: 100vw;
-        height: 766px;
-        border-bottom: none;
-        box-shadow: none;
     }
 
     #brown-hat {
@@ -493,7 +538,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 960px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .page {
         gap: 3rem;
     }
@@ -501,9 +546,21 @@ footer {
     .section {
         width: 96%;
     }
+
+    #logo-container .logo-text {
+        top: 30%;
+        left: 70%;
+        width: 60%;
+    }
+
+    #logo-container h2 {
+        line-height: 0.9;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
 }
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1024px) {
     .page {
         width: 960px;
         gap: 5rem;
@@ -548,5 +605,30 @@ footer {
         bottom: 50px;
         right: 50px;
         padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #logo-container .flex-img-div {
+        display: block;
+    }
+
+    #logo-container .flex-img {
+        height: 650px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #logo-container .logo-text {
+        width: 90%;
+        left: 87%;
+    }
+
+    #logo-container h2 {
+        font-size: 3rem;
+    }
+
+    #logo-container ul {
+        font-size: 2rem;
     }
 }
