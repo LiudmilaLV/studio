@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         let placemark = new ymaps.Placemark(studioAddress, {}, {
             iconLayout: "default#image",
-            iconImageHref: "./assets/img/logo-icons/poiner_black.png",
+            iconImageHref: "./assets/img/logo-icons/pointer-black.png",
             iconImageSize: [150, 200],
             iconImageOffset: [-55, -105]
         });
