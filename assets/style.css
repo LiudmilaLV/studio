@@ -101,7 +101,7 @@ section,
 
 #logo-container .logo-text {
     position: absolute;
-    top: 50%;
+    top: 32%;
     left: 70%;
     transform: translate(-50%, -50%);
     width: 60%;
