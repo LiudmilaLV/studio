@@ -608,7 +608,13 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1400px) and (min-width: 1600px) {
+    #logo-container .logo-text {
+        top: 38%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
     #logo-container .flex-img-div {
         display: block;
     }
@@ -622,6 +628,7 @@ footer {
     #logo-container .logo-text {
         width: 90%;
         left: 87%;
+        top: 37%;
     }
 
     #logo-container h2 {
