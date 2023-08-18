@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // common mosaic gallery viewer
-    new Viewer(document.getElementById('gallery'), gallerySettings);
+    const _ = new Viewer(document.getElementById('gallery'), gallerySettings);
 
     // each artist gallery viewer
     const artistGallery = document.querySelectorAll(".show-works");
     artistGallery.forEach(el => {
-        el.addEventListener("click", function() {
+        el.addEventListener("click", function () {
             const gallery = this.parentElement.parentElement.querySelector(".artist-gallery");
             let viewer = null;
             viewer = new Viewer(gallery, {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // add FAQ accordion animation
     const accordion = document.querySelectorAll(".content-box");
     accordion.forEach(el => {
-        el.addEventListener("click", function() {
+        el.addEventListener("click", function () {
             this.classList.toggle("active-toggle");
         })
     });
@@ -55,12 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
         banner.classList.remove("open-banner");
     }
 
-    // check click on button
-    actionButton.addEventListener("mousedown",  () => {
+    actionButton.addEventListener("mousedown", () => {
         if (!actionButton.classList.contains("open-button")) {
             open(actionButton, actionBanner)
-        }
-        else {
+        } else {
             close(actionButton, actionBanner)
         }
     });
@@ -73,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             center: studioAddress,
             zoom: 17
         });
-    
+
         let placemark = new ymaps.Placemark(studioAddress, {}, {
             iconLayout: "default#image",
             iconImageHref: "./assets/img/logo-icons/pointer-black.png",

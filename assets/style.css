@@ -494,6 +494,10 @@ footer {
         grid-auto-rows: 150px;
     }
 
+    #gallery img {
+        cursor: pointer;
+    }
+
     .nav {
         font-size: 1.6rem;
         justify-content: center;
@@ -608,9 +612,17 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1400px) and (min-width: 1600px) {
+@media only screen and (min-width: 1440px) and (min-width: 1600px) {
     #logo-container .logo-text {
         top: 38%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    #logo-container .logo-text {
+        max-width: 700px;
+        left: 67%;
+        top: 50%;
     }
 }
 
@@ -626,16 +638,33 @@ footer {
     }
 
     #logo-container .logo-text {
+        max-width: 900px;
         width: 90%;
-        left: 87%;
-        top: 37%;
+        left: 70%;
+        top: 52%;
     }
 
     #logo-container h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     #logo-container ul {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    #logo-container .logo-text {
+        width: 90%;
+        left: 65%;
+        top: 42%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    #logo-container .logo-text {
+        width: 90%;
+        left: 59%;
+        top: 32%;
     }
 }
