@@ -48,13 +48,13 @@ body {
 }
 
 .page {
-    margin-top: 60px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     color: var(--secondary);
     gap: 2rem;
+    margin: 0 auto;
 }
 
 section,
@@ -76,51 +76,6 @@ section,
 .nav > li {
     display: inline;
     list-style: none;
-}
-
-#logo-container {
-    display: block;
-    width: 100vw;
-}
-
-#logo-container img {
-    border-bottom: none;
-    box-shadow: none;
-}
-
-#logo-container .flex-img-div {
-    position: relative;
-    display: inline-block;
-}
-
-#logo-container .flex-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-#logo-container .logo-text {
-    position: absolute;
-    top: 32%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    box-shadow: none;
-}
-
-#logo-container h2 {
-    line-height: 1;
-    margin-bottom: 20px;
-    margin-left: -20px;
-}
-
-#logo-container ul {
-    color: #fefde7;
-    list-style: square;
-}
-
-#logo-container li {
-    margin-top: 5px;
 }
 
 .item-fixed {
@@ -465,25 +420,7 @@ footer {
     max-width: 22px;
 }
 
-@media only screen and (max-width: 768px) {
-    #logo-container .logo-text {
-        display: none;
-    }
-
-    #logo-container .big {
-        display: none;
-    }
-}
-
 @media only screen and (min-width: 768px) {
-    #logo-container .small {
-        display: none;
-    }
-
-    #logo-container .block {
-        display: none;
-    }
-
     section,
     .section {
         width: 70%;
@@ -502,10 +439,6 @@ footer {
         font-size: 1.6rem;
         justify-content: center;
         gap: 6rem;
-    }
-
-    .logo {
-        width: 120px;
     }
 
     #brown-hat {
@@ -544,30 +477,20 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .page {
+        padding-top: 40px;
         gap: 3rem;
     }
 
     .section {
         width: 96%;
     }
-
-    #logo-container .logo-text {
-        top: 30%;
-        left: 70%;
-        width: 60%;
-    }
-
-    #logo-container h2 {
-        line-height: 0.9;
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
-    .page {
+    .page, .logo-page {
         width: 960px;
         gap: 5rem;
+        padding-top: 60px;
     }
 
     section,
@@ -583,10 +506,6 @@ footer {
         align-self: flex-start;
         position: relative;
         right: 12rem;
-    }
-
-    .logo {
-        width: 200px;
     }
 
     .our-artists {
@@ -612,59 +531,92 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1440px) and (min-width: 1600px) {
-    #logo-container .logo-text {
-        top: 38%;
+#logo-container {
+    padding-top: 60px;
+    margin-top: 60px;
+    background-image: url('/assets/img/logo-icons/bg.jpg'), linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    background-size: cover, 100% 50px;
+    background-position: center, bottom;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    height: 100%;
+    color: var(--secondary);
+}
+
+#logo-container .mobile {
+    display: none !important;
+}
+
+#logo-container .logo-page {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    #logo-container {
+        padding: 20px;
+    }
+
+    #logo-container .desktop {
+        display: none !important;
+    }
+
+    #logo-container .mobile {
+        display: block !important;
+    }
+
+    #logo-container .logo-page {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-image img {
+        height: 300px !important;
+    }
+
+    .logo-title {
+        text-align: center;
     }
 }
 
-@media only screen and (min-width: 1280px) {
-    #logo-container .logo-text {
-        max-width: 700px;
-        left: 67%;
-        top: 50%;
-    }
+#logo-container ul {
+    color: #fefde7;
+    list-style: square;
+    line-height: 1.5;
 }
 
-@media only screen and (min-width: 1600px) {
-    #logo-container .flex-img-div {
-        display: block;
-    }
-
-    #logo-container .flex-img {
-        height: 650px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    #logo-container .logo-text {
-        max-width: 900px;
-        width: 90%;
-        left: 70%;
-        top: 52%;
-    }
-
-    #logo-container h2 {
-        font-size: 2.8rem;
-    }
-
-    #logo-container ul {
-        font-size: 1.8rem;
-    }
+.logo-image img {
+    width: auto;
+    height: 400px;
 }
 
-@media only screen and (min-width: 1920px) {
-    #logo-container .logo-text {
-        width: 90%;
-        left: 65%;
-        top: 42%;
-    }
+.logo-text {
+    margin-left: 40px;
 }
 
-@media only screen and (min-width: 2560px) {
-    #logo-container .logo-text {
-        width: 90%;
-        left: 59%;
-        top: 32%;
-    }
+.logo-text h2 {
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.logo-title {
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    padding: 0 80px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.logo-title h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    padding: 0;
 }

@@ -13,7 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // common mosaic gallery viewer
-    const _ = new Viewer(document.getElementById('gallery'), gallerySettings);
+    let galleryViewer = null;
+    let customSettings = {...gallerySettings}
+    customSettings.toolbar.close = function () {
+        galleryViewer.hide();
+    }
+    galleryViewer = new Viewer(document.getElementById('gallery'), customSettings);
 
     // each artist gallery viewer
     const artistGallery = document.querySelectorAll(".show-works");
@@ -21,12 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
         el.addEventListener("click", function () {
             const gallery = this.parentElement.parentElement.querySelector(".artist-gallery");
             let viewer = null;
+
+            let customSettings = {...gallerySettings}
+            customSettings.toolbar.close = function () {
+                viewer.hide();
+            }
+
             viewer = new Viewer(gallery, {
-                ...gallerySettings,
+                ...customSettings,
                 url: 'data-src',
                 hidden: function () {
                     viewer.destroy();
-                }
+                },
             });
 
             viewer.show();
