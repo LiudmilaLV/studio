@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     galleryViewer = new Viewer(document.getElementById('gallery'), customSettings);
 
+    let entranceViewer = null;
+    let customEntranceSettings = {...gallerySettings}
+    customSettings.toolbar.close = function () {
+        entranceViewer.hide();
+    }
+    entranceViewer = new Viewer(document.getElementById('entrance-gallery'), customEntranceSettings);
+
     // each artist gallery viewer
     const artistGallery = document.querySelectorAll(".show-works");
     artistGallery.forEach(el => {
